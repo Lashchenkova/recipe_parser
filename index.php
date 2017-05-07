@@ -1,11 +1,12 @@
 <?php
 
-include_once('index.html');
+include_once('index.shtml');
+include_once('tpls/nav.html');
 
 if (isset($_GET['q']) && !empty($_GET['q'])) {
 
     $query = $_GET['q'];
-    $save_form = file_get_contents('form.html');//form for saving pics
+    $save_form = file_get_contents('tpls/form.html');//form for saving pics
     echo str_replace("{{ query }}", $query, $save_form);
 
     //parse pics
@@ -66,3 +67,4 @@ if (isset($_GET['q']) && !empty($_GET['q'])) {
 ?>
 
 <script type="text/javascript" src="js/saveDish.js"></script>
+

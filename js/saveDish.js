@@ -11,7 +11,7 @@ $( ".dish_img" ).click(function() {
         opacity: 0.4
     });
 
-    $( '#dish_photoPath' ).val($( this ).attr( 'src' )).prop('disabled', true);
+    $( '#dish_photoPath' ).val($( this ).attr( 'src' ));
 });
 
 $( ".dish" ).click(function() {
@@ -20,6 +20,6 @@ $( ".dish" ).click(function() {
 
     var str = $( this ).find( '.recipe' ).html().replace( /\s+/g, " " );
 
-    $( '#ingredients' ).val(str).prop('disabled', true);
+    $( '#ingredients' ).val(str);
     $( '#dishName' ).val($( this ).find( "h3" ).text().replace( /&nbsp;/gi , ' '));
 });

@@ -1,10 +1,11 @@
 ﻿<?php
-
+//echo $data['ingredients'];
 //save pics to images folder
 if (isset($_POST) && !empty($_POST)) {
     $ingredients = "<ul>" . $_POST['ingredients'] . "</ul>";
     saveIngredients($_POST['dishName'], $ingredients);
     makeMirrorPic($_POST['photoPath'], 'images/' . $_POST['dishName'] . '.jpg');
+    header('Location: /');
 }
 
 function saveIngredients($fileName, $str)
