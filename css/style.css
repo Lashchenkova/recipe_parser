@@ -1,0 +1,38 @@
+body {
+    padding: 3%;
+    padding-top: 1%;
+}
+nav {
+    width: 45%;
+    margin: 0 auto;
+}
+ul {
+    width: 100%;
+    padding-bottom: 3%;
+}
+li {
+    padding: 0 3%;
+}
+li  a:hover {
+    color: grey;
+}
+li:first-child {
+    border-right: 1px solid lightgrey;
+}
+a, a:hover, a:focus {
+    text-decoration: none;
+    color: black;
+}
+#search {
+    width: 25%;
+}
+#save_form {
+    float: right;
+    width: 35%;
+}
+#save_form div {
+    margin-bottom: 0.5%;
+}
+.gallery {
+    margin-top: 15%;
+}
