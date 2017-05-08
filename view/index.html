@@ -9,12 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<form method="get" action="" class="form-horizontal" id="search">
-    <div class="input-group">
-        <input name="q" type="text" class="form-control" placeholder="Введите название блюда" required>
-        <span class="input-group-btn">
-        <button class="btn btn-default" type="submit">Поиск</button>
-      </span>
-    </div>
-</form>
+<nav>
+    <ul class="nav navbar-nav">
+        <li><h2><a href="/">Парсинг рецептов</a></h2></li>
+        <li><h2><a href="?dishes=true">Книга рецептов</a></h2></li>
+    </ul>
+</nav>
+{{ content }}
+<script type="text/javascript" src="js/saveDish.js"></script>
 </body>
